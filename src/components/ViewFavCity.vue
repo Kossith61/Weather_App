@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 const favouriteCityName = ref(null);
 const favouriteCityTemp = ref(null);
@@ -8,11 +8,11 @@ const favouriteCityHumidity = ref(null);
 const favouriteCityWindSpeed = ref(null);
 
 onMounted(() => {
-  favouriteCityName.value = localStorage.getItem('favouriteCityName');
-  favouriteCityTemp.value = localStorage.getItem('favouriteCityTemp');
-  favouriteCityFeelsLike.value = localStorage.getItem('favouriteCityFeelsLike');
-  favouriteCityHumidity.value = localStorage.getItem('favouriteCityHumidity');
-  favouriteCityWindSpeed.value = localStorage.getItem('favouriteCityWindSpeed');
+  favouriteCityName.value = localStorage.getItem("favouriteCityName");
+  favouriteCityTemp.value = localStorage.getItem("favouriteCityTemp");
+  favouriteCityFeelsLike.value = localStorage.getItem("favouriteCityFeelsLike");
+  favouriteCityHumidity.value = localStorage.getItem("favouriteCityHumidity");
+  favouriteCityWindSpeed.value = localStorage.getItem("favouriteCityWindSpeed");
 });
 </script>
 
@@ -33,5 +33,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-  /* Your styles here */
+/* Your styles here */
 </style>
